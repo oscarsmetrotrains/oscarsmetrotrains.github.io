@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Welcome — X’Trapolis 2.0 (Danny)</title>
+  <style>
+    :root{
+      --bg:#041c2c;
+      --card:#0a2e26;
+      --accent:#00ff99;
+      --text:#e6f7ff;
+      --muted:#9dd6c9;
+      --btn-bg:#00a6a6;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      background: linear-gradient(180deg, #032b43 0%, #023436 60%, #011f26 100%);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+
+    .container{
+      width:100%;
+      max-width:900px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:16px;
+      box-shadow: 0 10px 30px rgba(2,8,23,0.6);
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,0.03);
+    }
+
+    header{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      padding:28px;
+      background: linear-gradient(90deg, rgba(0,0,0,0.12), rgba(255,255,255,0.02));
+    }
+    .title {
+      line-height:1;
+    }
+    .title h1{
+      margin:0;
+      font-size:22px;
+      letter-spacing: -0.2px;
+    }
+    .title p {
+      margin:6px 0 0 0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    main{
+      padding:28px;
+      display:grid;
+      gap:18px;
+    }
+
+    .intro{
+      background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));
+      border-radius:10px;
+      padding:20px;
+      border:1px solid rgba(255,255,255,0.02);
+    }
+
+    .intro h2{
+      margin:0 0 8px;
+      font-size:18px;
+      color:var(--text);
+    }
+    .intro p{
+      margin:0 0 10px;
+      color:var(--muted);
+      line-height:1.5;
+      font-size:15px;
+    }
+
+    .photo-frame {
+      margin:20px 0;
+      border-radius:12px;
+      overflow:hidden;
+      border:2px solid var(--accent);
+      max-width:100%;
+    }
+    .photo-frame img {
+      display:block;
+      width:100%;
+      height:auto;
+    }
+
+    .features {
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .feature {
+      background: rgba(255,255,255,0.02);
+      border-radius:8px;
+      padding:12px 14px;
+      min-width:160px;
+      flex:1;
+      border:1px solid rgba(255,255,255,0.015);
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .actions{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      margin-top:6px;
+    }
+
+    .discord-btn{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:12px 16px;
+      background:var(--btn-bg);
+      color:white;
+      text-decoration:none;
+      border-radius:10px;
+      font-weight:600;
+      box-shadow: 0 8px 20px rgba(0,166,166,0.18);
+      transition:transform .14s ease, box-shadow .14s ease;
+      border:none;
+    }
+    .discord-btn:hover{ transform:translateY(-3px); box-shadow: 0 12px 28px rgba(0,166,166,0.22); }
+    .discord-btn:active{ transform:translateY(-1px); }
+
+    .discord-icon{
+      width:20px;height:20px;display:inline-block;vertical-align:middle;
+      filter:drop-shadow(0 1px 0 rgba(0,0,0,0.2));
+    }
+
+    footer{
+      padding:18px 28px;
+      font-size:13px;
+      color:var(--muted);
+      border-top:1px solid rgba(255,255,255,0.02);
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    @media (max-width:640px){
+      header{padding:18px}
+      main{padding:18px}
+      footer{padding:12px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <div class="title">
+        <h1>Welcome to my website</h1>
+        <p>All aboard — a place for trains, facts, photos and friendly chats.</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="intro-title">
+        <h2 id="intro-title">Hello! I’m X’Trapolis 2.0 — Danny</h2>
+
+        <div class="photo-frame">
+          <img src="images/Xtrapolis_header.jpg" alt="Danny with a train">
+        </div>
+
+        <p>
+          I’m a passionate train enthusiast who loves everything rail-related — from modern X’Trapolis units to historic engines.
+          This site is my little station on the web where I share favorite photos, interesting train facts, timetable discoveries, and
+          my thoughts about the world of rail transport.
+        </p>
+
+        <p>
+          Whether you enjoy spotting trains, learning about rolling stock, or just love the sound of a diesel rumble or the smooth glide of
+          an electric unit, you’re in the right place. I post photos, short write-ups, and little projects all about trains — and I’m always
+          excited to meet people who love rails as much as I do.
+        </p>
+
+        <p>
+          If you want to chat with other train fans, swap photos, ask questions, or just hang out, please <strong>join my Discord server</strong>.
+          It’s the friendliest carriage on the internet — full of folks who love trains, timetables, tips, and fun rail-related chat.
+        </p>
+
+        <div class="actions">
+          <a
+            class="discord-btn"
+            href="https://discord.gg/WtN8KGHM7M"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Join Danny's Discord server (opens in a new tab)">
+            <svg class="discord-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path fill="#ffffff" d="M20.317 4.369a19.791 19.791 0 00-4.885-1.515..."/>
+              <path fill="#ffffff" d="M9.622 15.27c-1.18 0-2.153-1.085..."/>
+            </svg>
+            Join my Discord
+          </a>
+
+          <div style="color:var(--muted); font-size:14px;">
+            <strong>Invite:</strong>&nbsp;discord.gg/WtN8KGHM7M
+          </div>
+        </div>
+      </section>
+
+      <section class="features" aria-label="What to expect">
+        <div class="feature">
+          <strong>Photos & Spotting</strong>
+          <div style="margin-top:6px">My favorite train photos and spotting notes from local lines.</div>
+        </div>
+        <div class="feature">
+          <strong>Facts & Finds</strong>
+          <div style="margin-top:6px">Short write-ups about rolling stock, timetables and railway tech.</div>
+        </div>
+        <div class="feature">
+          <strong>Join the Community</strong>
+          <div style="margin-top:6px">Chat in Discord, swap tips, and make friends who love trains.</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> X’trapolis 2.0 (Danny)</div>
+      <div style="opacity:0.9">All aboard! 🚆</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Discord WidgetBot -->
+  <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer></script>
+  <script>
+    window.addEventListener('load', () => {
+      new Crate({
+        server: '1400999321054478336', // X'Trapolis 2.0
+        channel: '1400999322841124929' // #🚽general
+      });
+    });
+  </script>
+</body>
+</html>
